@@ -1,0 +1,285 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 100px 0;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
+}
+
+#container{
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+#container .community{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(179, 62%, 100%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px 5px 0 0;
+    min-height: 200px;
+    max-width: 500px;
+    padding: 30px 20px;
+}
+
+.community h2{
+    color: var(--Cyan);
+    padding: 10px 0;
+}
+
+.community h4{
+    color: var(--BrightYellow);
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.community p{
+    color: var(--GrayishBlue);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#container .contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain .monthly{
+    display: block;
+    background: hsl(179, 62%, 43%);
+    height: 200px;
+    width: 250px;
+    border-radius: 0 0 0 5px;
+    padding: 30px 20px;
+}
+
+.monthly h4{
+    color: hsl(179, 62%, 100%);
+    font-size: 15px;
+}
+
+.monthly p{
+    color: var(--LightGray);
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.monthly span{
+    color: hsl(179, 62%, 100%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.monthly button{
+    background: var(--BrightYellow);
+    height: 30px;
+    font-size: 14px;
+    color: hsl(179, 62%, 100%);
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    width: 150px;
+    margin: 20px 0;
+}
+
+.contain .about{
+    display: block;
+    background: hsl(179, 62%, 50%);
+    height: 200px;
+    width: 250px;
+    border-radius: 0 0 5px 0px;
+    padding: 30px 20px;
+}
+
+.about h4{
+    font-size: 15px;
+    color: hsl(179, 62%, 100%);
+}
+
+.about p{
+    font-size: 12px;
+    color: var(--LightGray);
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 375px) {
+
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    #container {
+        display: block;
+        justify-content: center;
+        align-content: center;
+        margin: 0 0px;
+    }
+
+    #container .community {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 5px 0 0;
+        min-height: 255px;
+        max-width: 300px;
+        padding: 30px 20px;
+    }
+
+    .community p{
+        padding-top: 10px;
+    }
+
+
+    #container .contain {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contain .monthly {
+        display: block;
+        background: hsl(179, 62%, 43%);
+        height: 240px;
+        width: 300px;
+        border-radius: 0 0 0 0px;
+        padding: 30px 20px;
+    }
+
+
+    .monthly button {
+        background: var(--BrightYellow);
+        height: 45px;
+        font-size: 1rem;
+        color: hsl(179, 62%, 100%);
+        font-weight: 600;
+        border: none;
+        border-radius: 2px;
+        width: 210px;
+        margin: 20px 0px;
+    }
+
+
+    .contain .about {
+        display: block;
+        background: hsl(179, 62%, 50%);
+        height: 240px;
+        width: 300px;
+        border-radius: 0 0 5px 5px;
+        padding: 30px 20px;
+    }
+
+    .about p{
+        text-align: left;
+        font-size: 0.9rem;
+        color: var(--LightGray);
+        padding-top: 20px;
+        padding-right: 80px;
+        line-height: 1.4;
+    }
+}
+
+
+@media (max-width: 790px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    #container {
+        display: block;
+        justify-content: center;
+        align-content: center;
+        margin: 0 0px;
+    }
+
+    #container .community {
+        display: block;
+        justify-content: center;
+        border-radius: 5px 5px 0 0;
+        min-height: 255px;
+        max-width: 300px;
+        padding: 30px 20px;
+    }
+
+    .community p{
+        padding-top: 10px;
+    }
+
+
+    #container .contain {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contain .monthly {
+        display: block;
+        background: hsl(179, 62%, 43%);
+        height: 240px;
+        width: 300px;
+        border-radius: 0 0 0 0px;
+        padding: 30px 20px;
+    }
+
+
+    .monthly p{
+        font-size: 0.9rem;
+    }
+
+
+    .monthly button {
+        background: var(--BrightYellow);
+        height: 45px;
+        font-size: 1rem;
+        color: hsl(179, 62%, 100%);
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        width: 255px;
+        margin: 30px 0px;
+    }
+
+
+    .contain .about {
+        display: block;
+        background: hsl(179, 62%, 50%);
+        height: 240px;
+        width: 300px;
+        border-radius: 0 0 5px 5px;
+        padding: 30px 20px;
+    }
+}
